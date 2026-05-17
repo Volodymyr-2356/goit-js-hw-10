@@ -66,14 +66,15 @@ clockBtnStart.addEventListener("click", () => {
         hours: 0,
         minutes: 0,
         seconds: 0,
-      });
+                        });
+            inputEl.disabled = false;
+            clockBtnStart.disabled = true;
         
             return;
             
             
         }
-        inputEl.disabled = false;
-        clockBtnStart.disabled = true;
+       
          updateTimer(convertMs(timeLeft));
         
         

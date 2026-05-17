@@ -59,6 +59,7 @@ clockBtnStart.addEventListener("click", () => {
        
         if (timeLeft <= 0) {
             clearInterval(intervalId);
+             inputEl.disabled = false;
 
             updateTimer({
         days: 0,

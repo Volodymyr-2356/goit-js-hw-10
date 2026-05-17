@@ -17,7 +17,7 @@ const options = {
       const selectedDate = selectedDates[0];
       const currentData = new Date();
       if (selectedDate <= currentData) {
-          iziToast.warning({ title: 'Error', message: 'Please choose a date in the future' });
+          iziToast.show({ title: 'Error', message: 'Please choose a date in the future',position: 'topRight',backgroundColor: 'red',messageColor: 'white', titleColor:'white' });
           clockBtnStart.disabled = true;
           return;
       }
